@@ -132,6 +132,30 @@ h2 {
   gap: 20px;
 }
 
+/* SKILLS GRID */
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background: linear-gradient(145deg, #ffffff, var(--light-blue));
+  padding: 25px;
+  border-radius: 15px;
+  transition: transform .25s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+
 
 .card {
   background: linear-gradient(145deg, #ffffff, var(--light-blue));
@@ -218,6 +242,10 @@ footer {
     gap:15px;
   }
 
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
 }
 
 </style>
@@ -281,42 +309,36 @@ footer {
 
 <h2>Skills</h2>
 
+<div class="skills-grid">
 
-<div class="cards">
+  <div class="card">
+    <h3>Mandarin Chinese</h3>
+    <p>
+      4 years of study in written and oral Mandarin Chinese.
+    </p>
+  </div>
 
+  <div class="card">
+    <h3>Laboratory Skills</h3>
+    <p>
+      Strong micropipette technique and laboratory skills.
+    </p>
+  </div>
 
-<div class="card">
-<h3>Mandarin Chinese</h3>
-<p>
-4 years of study in written and oral Mandarin Chinese.
-</p>
-</div>
+  <div class="card">
+    <h3>Finance & Business</h3>
+    <p>
+      Knowledge of personal finance, investment portfolio construction,
+      and startup business modeling.
+    </p>
+  </div>
 
-
-<div class="card">
-<h3>Laboratory Skills</h3>
-<p>
-Strong micropipette technique and laboratory skills.
-</p>
-</div>
-
-
-<div class="card">
-<h3>Technology</h3>
-<p>
-Proficient in Microsoft Excel, Word, and PowerPoint.
-</p>
-</div>
-
-
-<div class="card">
-<h3>Finance & Business</h3>
-<p>
-Knowledge of personal finance, investment portfolio construction,
-and startup business modeling.
-</p>
-</div>
-
+  <div class="card">
+    <h3>Technology</h3>
+    <p>
+      Proficient in Microsoft Excel, Word, and PowerPoint.
+    </p>
+  </div>
 
 </div>
 
